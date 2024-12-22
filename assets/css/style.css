@@ -177,7 +177,10 @@ h6 {
     .card-colored p{
         font-size: 14px;
     }
+    h4, .h4 {
+        font-size: 18px;
+    }
     .fs-sm {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
