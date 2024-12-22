@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue: #3E46E4;
+    --pinkish-red: #FD6C88;
+    --medium-blue: #307BAA;
+    --greenish-blue: #53BAB5;
+    --bright-orange: #FF7445;
+    --white-smoke: #F8F8F8;
+    --white: #FFF;
+    --gray: #858585;
+    --dark-gray: #595959;
+    --black: #000;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background-color: var(--white-smoke);
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+input,
+select {
+    outline: 0;
+    box-shadow: 0;
+}
+
+input:focus,
+select:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: auto !important;
+}
+
+.h6,
+h6 {
+    font-size: 18px;
+}
+
+.fs-md {
+    font-size: 14px;
+}
+
+.fs-sm {
+    font-size: 12px;
+}
+
+.fs-xs {
+    font-size: 10px;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: .735fr 1fr .725fr;
+    gap: 1rem;
+}
+
+.date {
+    color: var(--pinkish-red);
+}
+
+.text-primary {
+    color: var(--blue) !important;
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.text-dark-gray {
+    color: var(--dark-gray);
+}
+
+.loader {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: conic-gradient(var(--fill) 0% var(--progress, 10%), white var(--progress, 10%) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(40deg);
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.card-gray {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.text-pink {
+    color: #FD6C88;
+}
+
+.text-content {
+    padding: 0 4px;
+    flex-grow: 1;
+}
+
+.icon-img {
+    max-width: 56px;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url(../images/select.svg);
+    max-width: 125px;
+    background-color: #F5F5F5;
+}
+
+.progress {
+    height: 20px;
+    background: #FFE9EE;
+    font-size: 10px;
+}
+
+.progress p {
+    top: 2px;
+}
+
+.progress-bar {
+    background: #FD6C88;
+}
+
+@media screen and (max-width:1400px) {
+    .main-grid {
+        grid-template-columns: .75fr 1fr;
+    }
+
+    .main-grid .card-wrapper:last-child {
+        grid-area: 2 / 1 / 2 / 3;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-grid .card-wrapper:last-child {
+        grid-area: 3;
+    }
+
+    h4,
+    .h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    h4,
+    .h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .card-colored img {
+        max-width: 35px;
+    }
+}
