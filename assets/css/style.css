@@ -137,7 +137,7 @@ h6 {
     background: #FD6C88;
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1320px) {
     .main-grid {
         grid-template-columns: .75fr 1fr;
     }
